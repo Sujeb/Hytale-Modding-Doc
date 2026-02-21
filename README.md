@@ -71,6 +71,22 @@ If you are an AI assistant using this repository:
 
 ---
 
+## 🔧 How to Decompile `HytaleServer.jar`
+
+To generate the source reference files used in this documentation, you need to decompile the server jar. We recommend using **CFR**.
+
+1. Download the latest `cfr.jar` from the [CFR Releases page](https://github.com/leibnitz27/cfr/releases).
+2. Place both `HytaleServer.jar` and `cfr.jar` in the root directory of this repository.
+3. Run the following command in your terminal:
+   ```bash
+   java -jar cfr.jar HytaleServer.jar --outputdir decompiled
+   ```
+4. All decompiled `.java` files will now be available in the `decompiled/` directory.
+
+> **Note:** Both `HytaleServer.jar` and `cfr.jar`, as well as the contents of the `decompiled/` folder, are intentionally ignored by `.gitignore` to prevent distributing proprietary code.
+
+---
+
 ## ⚖️ License & Disclaimer
 
 This project is licensed under the [Apache License 2.0](LICENSE). 
