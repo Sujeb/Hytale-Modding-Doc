@@ -1,9 +1,9 @@
 <div align="center">
   <h1>Hytale Modding Documentation</h1>
-  <p><strong>An unofficial, AI-optimized reference for Hytale Server Modding</strong></p>
+  <p><strong>An unofficial, AI-optimized reference for Hytale Modding</strong></p>
   <p>
     <a href="https://github.com/Sujeb/hytale-modding-doc/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License"></a>
-    <img src="https://img.shields.io/badge/Version-Verified_Feb_2026-brightgreen" alt="Version">
+    <img src="https://img.shields.io/badge/Hytale-Update_3_(2026.02.17--255364b8e)-brightgreen" alt="Hytale Update 3">
     <img src="https://img.shields.io/badge/Target-AI_Agents_%26_Developers-orange" alt="Target">
   </p>
 </div>
@@ -16,7 +16,9 @@
 
 ## 📖 About This Project
 
-This repository serves as a verified documentation hub and reference point for **Hytale Server Modding**. It contains decompiled class structures, API references, and system behaviors (e.g., ECS, Blocks, UI).
+This repository serves as a verified documentation hub and reference point for **Hytale Modding**. It contains decompiled class structures, API references, and system behaviors (e.g., ECS, Blocks, UI).
+
+> **Hytale Version:** Update 3 — Build `2026.02.17-255364b8e`
 
 The primary focus of this repository is to be **AI-optimized**. The formatting is explicitly designed to be easily ingested by Large Language Models (LLMs) and AI agents (like GitHub Copilot, Cursor, or specialized coding assistants) to help developers quickly build plugins and scale their Hytale servers.
 
