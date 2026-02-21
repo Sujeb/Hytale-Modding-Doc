@@ -1,0 +1,8 @@
+HytaleServer.jar
+cfr.jar
+
+
+# Ignoriere den kompletten Inhalt vom decompiled Ordner
+decompiled/*
+# Erlaube aber die .gitkeep Datei (und damit den Ordner selbst)
+!decompiled/.gitkeep

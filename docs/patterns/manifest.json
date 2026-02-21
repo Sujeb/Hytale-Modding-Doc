@@ -1,0 +1,19 @@
+{
+    "Name": "ExampleMod",
+    "Group": "com.example",
+    "Version": "1.0.0",
+    "Main": "com.example.mod.ExampleMod",
+    "ServerVersion": "0.1.0",
+    "Description": "An example mod for Hytale",
+    "Website": "https://example.com",
+    "Dependencies": {
+        "com.other.mod": "1.0.0"
+    },
+    "OptionalDependencies": {},
+    "IncludesAssetPack": true,
+    "Hyxin": {
+        "Configs": [
+            "mixinmanifest.json"
+        ]
+    }
+}

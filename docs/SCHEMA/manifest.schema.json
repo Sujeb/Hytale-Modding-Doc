@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Hytale Plugin Manifest",
+    "description": "Schema for Hytale manifest.json files, verified against PluginManifest.class",
+    "type": "object",
+    "required": [
+        "Name",
+        "Main"
+    ],
+    "properties": {
+        "Name": {
+            "type": "string",
+            "description": "Unique name of the plugin"
+        },
+        "Group": {
+            "type": "string",
+            "description": "Package group ID (e.g. com.example)",
+            "default": "Hytale"
+        },
+        "Version": {
+            "type": "string",
+            "description": "Semantic version of the plugin",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
+        },
+        "Main": {
+            "type": "string",
+            "description": "Fully qualified class name of the plugin entry point (must extend JavaPlugin)"
+        },
+        "Description": {
+            "type": "string",
+            "description": "Short description of the plugin"
+        },
+        "Website": {
+            "type": "string",
+            "description": "Project website URL"
+        },
+        "Authors": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Role": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "ServerVersion": {
+            "type": "string",
+            "description": "Semver range of compatible server versions"
+        },
+        "Dependencies": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            },
+            "description": "Map of PluginID -> SemverRange"
+        },
+        "OptionalDependencies": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            }
+        },
+        "LoadBefore": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            },
+            "description": "Plugins that should load AFTER this one"
+        },
+        "SubPlugins": {
+            "type": "array",
+            "items": {
+                "$ref": "#"
+            },
+            "description": "Nested plugin manifests"
+        },
+        "DisabledByDefault": {
+            "type": "boolean",
+            "default": false
+        },
+        "IncludesAssetPack": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true, treats this JAR as an Asset Pack (loading Assets/ root)"
+        },
+        "Hyxin": {
+            "type": "object",
+            "properties": {
+                "Configs": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "__comment": "Hytale Asset Patterns. DEFINITIONS go in 'Server/', RESOURCES in 'Common/'.",
+  "item_with_block": {
+    "__path": "Server/Item/Items/my_dirt.json",
+    "Name": "my_mod.block.dirt",
+    "Icon": "Textures/GUI/Icons/my_dirt.png",
+    "BlockType": {
+      "Material": "Solid",
+      "DrawType": "Cube",
+      "Textures": [
+        {
+          "All": "Textures/Blocks/my_dirt.png"
+        }
+      ],
+      "Gathering": {
+        "Breaking": {
+          "GatherType": "Shovel"
+        }
+      }
+    }
+  },
+  "simple_item": {
+    "__path": "Server/Item/Items/my_sword.json",
+    "Name": "my_mod.item.sword",
+    "Icon": "Textures/GUI/Icons/my_sword.png",
+    "Model": "Models/Item/my_sword.blockymodel",
+    "MaxStack": 1
+  },
+  "recipe": {
+    "__path": "Server/Item/Recipes/my_sword_recipe.json",
+    "Name": "my_mod.recipe.sword",
+    "Result": {
+      "Item": "my_sword",
+      "Amount": 1
+    },
+    "Pattern": [
+      " X ",
+      " X ",
+      " S "
+    ],
+    "Key": {
+      "X": {
+        "Item": "Hytale:IronIngot"
+      },
+      "S": {
+        "Item": "Hytale:Stick"
+      }
+    }
+  }
+}
